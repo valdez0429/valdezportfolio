@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    color: whitesmoke;
+}
+.navbar ul .logo{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 200px;
+  
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+    font-size: 20px;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 840px;
+    justify-content: center;
+    color: white;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('img2.jpg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.0;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    font-family: century;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 50px;
+    text-align: left;
+    
+}
+.headings{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+.main .text1{
+    font-size: 27px;
+}
+.main .text2{
+    font-size: 50px;
+    font-weight: 600;
+  font-family: inherit;
+    margin-left: -3px;
+    color: rgb(238, 217, 30);
+}
+.main .text3{
+    font-size: 27px;
+    margin: 5px 0;
+}
+
+/* About Section */
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+#pic{
+    display: flex;
+   
+}
+#pic img{
+    width: 400px;
+    height: 400px;
+    padding-left: 50px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+/* Education */
+#education{
+
+    padding-top: 20px;
+}
+.education .box-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem 2rem;
+    
+}
+.education .box-container .box{
+    width: 30rem;
+    padding: 0 2rem;
+    padding-bottom:  4rem;
+    border-left: .2rem solid black;
+
+    
+    
+}
+.education .box-container .box .year{
+    font-size: 2rem;
+    color: black;
+    position: relative;
+}
+.education .box-container .box .year::before{
+    content: '';
+    position: absolute;
+    top: 0.10rem; left: -3.1rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: pink;
+    padding-left: 4rem 0;
+
+}
+.education .box-container .box h3{
+    font-size: 1.5rem;
+    color: black;
+    padding-top: 1rem;
+}
+.education .box-container .box .p{
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 1rem 0;
+
+
+}
+
+
+/* Portfolio Section */
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    align-items: center;
+    padding: 20px;
+
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery img{
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+}
+.gallery img:hover{
+    
+    border: none;
+    box-shadow: 2px 2px 20px rgb(253, 253, 253);
+    transition: all .8s;
+}
+
+/* Skills Section */
+#services{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color:  gray;
+    color: white;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgb(255,45,45) 50%, white 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+    padding: 20px;
+}
+.box1:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px rgb(255,45,45);
+}
+.box1 img{
+    width: 150px;
+    height: 15  0px;
+    padding: 10px;
+    padding-bottom: 0 0;
+
+}
+.box1.p{
+    text-align: center;
+    padding: 20px;
+}
+.box1 .h1{
+    padding-top: 50%;
+}
+
+/* Contact Section */
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    outline: none;
+}
+#msg{
+    width: 20%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+#send{
+    width: 10%;
+    padding: 10px;
+    margin: 40px;
+    width: 10%;
+    border: none;
+    outline: none;
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+
+}
+
+#footer{
+    position: fixed;
+    bottom: 0;
+}
+@media(max-height:800px)
+{
+    footer
+    {
+        position: static;
+    }
+    header{
+        padding-top: 40px;
+    }
+}
+.footer{
+    background-color: black;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+.footer .footer-left{
+    width: 30%;
+}
+.footer .footer-left h3{
+    color: white;
+    font: normal 36px 'cookie',cursive;
+    margin:0;
+}
+.footer .footer-left img{
+    width: 30%;
+}
+.footer .footer-left h3 span{
+    color: yellow;
+}
+.footer .footer-links{
+    color:white;
+    margin: 2px 0 12px;
+}
